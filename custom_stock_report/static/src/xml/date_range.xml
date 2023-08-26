@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+   <t t-name="button_box.ListView.Buttons" t-inherit="web.ListView.Buttons">
+    <xpath expr="//*[@class='btn btn-primary o_list_button_add']" position="after">
+		<div style="margin-left: 20px; background-color: #f0f0f0; padding: 10px;">
+			<label for="from">From/To</label>
+			<input type="date" id="from" name="from" value="2023-08-15" style="margin-right: 10px;" />
+			<input type="date" id="to" name="to" value="2023-09-15" style="margin-right: 10px;" />
+			<button name="custom_fetch_button" string="Open Report" type="button" class="btn btn-primary" style="margin-left: 10px;">
+				Apply
+			</button>
+		</div>
+    </xpath>
+   </t>
+</templates>
